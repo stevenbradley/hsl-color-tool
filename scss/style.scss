@@ -1,0 +1,85 @@
+
+/* --------------------------------------------------------------*/
+/* ---- VARIABLES
+/* --------------------------------------------------------------*/
+
+$hue-1: 0;
+$hue-2: 120;
+$hue-3: 240;
+$hue-4: 60;
+
+$saturation-1: 100%;
+$saturation-2: 100%;
+$saturation-3: 100%;
+$saturation-4: 100%;
+
+$lightness-1: 50%;
+$lightness-2: 50%;
+$lightness-3: 50%;
+$lightness-4: 50%;
+
+/*
+$hsl-1: hsl($hue-1, $saturation-1, $lightness-1);
+$hsl-2: hsl($hue-2, $saturation-2, $lightness-2);
+$hsl-3: hsl($hue-3, $saturation-3, $lightness-3);
+$hsl-4: hsl($hue-4, $saturation-4, $lightness-4);
+*/
+
+
+/* --------------------------------------------------------------*/
+/* ---- GENERAL
+/* --------------------------------------------------------------*/
+
+body {
+	font-family: menlo;
+	font-size: 1em;
+	margin: 0;
+	padding: 0;
+}
+
+.block-wrapper {
+	width: 50%;
+	margin: 2em auto;
+}
+
+.block {
+	width: 50%;
+	height: 14em;
+	margin: 0;
+	float: left;
+}
+
+.color-adjuster {
+	float: left;
+	width: 50%;
+	margin: 1em 0;
+	text-align: center;
+}
+
+.rgb-1, .rgb-2 {
+	margin: 0 0 0.75em 0;
+}
+
+.rgb-3, .rgb-4 {
+	margin: 0.75em 0 0 0;
+}
+
+
+/* --------------------------------------------------------------*/
+/* ---- COLOR
+/* --------------------------------------------------------------*/
+.hsl-1 {
+	background-color: hsl($hue-1, $saturation-1, $lightness-1);
+}
+
+.hsl-2 {
+	background: hsl($hue-2, $saturation-2, $lightness-2);
+}
+
+.hsl-3 {
+	background: hsl($hue-3, $saturation-3, $lightness-3);
+}
+
+.hsl-4 {
+	background: hsl($hue-4, $saturation-4, $lightness-4);
+}

@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+<head>
+<title>Hue, Saturation, Lightness</title>
+
+<meta charset="utf-8">
+<meta name="description" content="A demonstation of the effect of hue, saturation, and lightness combinatons on a color paletter" />
+
+<link rel="stylesheet" href="css/style.css">
+<script src="js/jquery-1.9.1-min.js"></script>
+<script src="js/hsl.js"></script>
+
+</head>
+
+<body>
+
+<div class="block-wrapper">
+
+	<div class="color-adjuster">
+		<div class="hex-1 one">#ff0000</div>
+		<div class="rgb-1 one">rgb(255, 0, 0)</div>
+		<div class="value-adjuster">
+			<label for="hue">H1</label>
+			<input type="range" class="hue-1 hue" min="0" max="360" value="0" />
+			<input type="text" class="hueValue-1 hueValue" size="3" value="0">
+		</div>
+		
+		<div class="value-adjuster">
+			<label for="saturation">S1</label>
+			<input type="range" class="saturation-1 saturation" min="0" max="100" value="100" />
+			<input type="text" class="saturationValue-1 saturationValue" size="3" value="100">
+		</div>
+		
+		<div class="value-adjuster">
+			<label for="lightness">L1</label>
+			<input type="range" class="lightness-1 lightness" min="0" max="100" value="50" />
+			<input type="text" class="lightnessValue-1 lightnessValue" size="3" value="50">
+		</div>
+	</div>
+	
+	<div class="color-adjuster">
+		<div class="hex-2">#00ff00</div>
+		<div class="rgb-2">rgb(0, 255, 0)</div>
+		<div class="value-adjuster">
+			<label for="hue-2">H2</label>
+			<input type="range" class="hue-2 hue" min="0" max="360" value="120" />
+			<input type="text" class="hueValue-2 hueValue" size="3" value="120">
+		</div>
+		
+		<div class="value-adjuster">
+			<label for="saturation-2">S2</label>
+			<input type="range" class="saturation-2 saturation" min="0" max="100" value="100" />
+			<input type="text" class="saturationValue-2 saturationValue" size="3" value="100">
+		</div>
+		
+		<div class="value-adjuster">
+			<label for="lightness-2">L2</label>
+			<input type="range" class="lightness-2 lightness" min="0" max="100" value="50" />
+			<input type="text" class="lightnessValue-2 lightnessValue" size="3" value="50">
+		</div>
+	</div>
+
+	<div class="block hsl-1"></div>
+	<div class="block hsl-2"></div>
+	<div class="block hsl-3"></div>
+	<div class="block hsl-4"></div>
+
+	<div class="color-adjuster">
+		<div class="value-adjuster">
+			<label for="hue-3">H3</label>
+			<input type="range" class="hue-3 hue" min="0" max="360" value="240" />
+			<input type="text" class="hueValue-3 hueValue" size="3" value="240">
+		</div>
+		
+		<div class="value-adjuster">
+			<label for="saturation-3">S3</label>
+			<input type="range" class="saturation-3 saturation" min="0" max="100" value="100" />
+			<input type="text" class="saturationValue-3 saturationValue" size="3" value="100">
+		</div>
+		
+		<div class="value-adjuster">
+			<label for="lightness-3">L3</label>
+			<input type="range" class="lightness-3 lightness" min="0" max="100" value="50" />
+			<input type="text" class="lightnessValue-3 lightnessValue" size="3" value="50">
+		</div>
+		<div class="rgb-3">rgb(0, 0, 255)</div>
+		<div class="hex-3">#0000ff</div>
+	</div>
+	
+	<div class="color-adjuster">
+		<div class="value-adjuster">
+			<label for="hue-3">H4</label>
+			<input type="range" class="hue-4 hue" min="0" max="360" value="60" />
+			<input type="text" class="hueValue-4 hueValue" size="3" value="60">
+		</div>
+		
+		<div class="value-adjuster">
+			<label for="saturation-4">S4</label>
+			<input type="range" class="saturation-4 saturation" min="0" max="100" value="100" />
+			<input type="text" class="saturationValue-4 saturationValue" size="3" value="100">
+		</div>
+		
+		<div class="value-adjuster">
+			<label for="lightness-4">L4</label>
+			<input type="range" class="lightness-4 lightness" min="0" max="100" value="50" />
+			<input type="text" class="lightnessValue-4 lightnessValue" size="3" value="50">
+		</div>
+		<div class="rgb-4">rgb(255, 255, 0)</div>
+		<div class="hex-4">#ffff00</div>
+	</div>
+
+</div>
+
+</body>
+</html>
